@@ -15,14 +15,12 @@ public class MainFrame extends JFrame {
     public MainFrame(){
         setTitle(title);
 
-        setLayout(new BorderLayout());
+
 
 
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-
-        setSize(800,600);
 
         Container c = getContentPane();
 
@@ -30,7 +28,7 @@ public class MainFrame extends JFrame {
 
         loginPanel = new LoginPanel(this);
 
-        c.add(loginPanel, BorderLayout.CENTER);
+        c.add(loginPanel);
 
     }
 }

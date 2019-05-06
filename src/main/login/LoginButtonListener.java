@@ -40,7 +40,7 @@ public class LoginButtonListener implements ActionListener {
         private void drawCamerasPanel(){
             mainFrame.getContentPane().removeAll();
             mainFrame.revalidate();
-            mainFrame.add(new CamerasPanel());
+            mainFrame.add(new CamerasPanel(mainFrame));
             mainFrame.revalidate();
             mainFrame.repaint();
         }
